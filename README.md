@@ -94,12 +94,48 @@ This repository contains the reference code for the project CSE258: Web Mining a
 
 问题：参考论文用的方法有点抽象
 
+## NetModel
+
+参考了网络上处理好的数据集，使用特征：\
+"user_id" : np.array(r['user_id'], dtype=np.int64), \
+"cup_size" : np.array(r['cup_size'], dtype=np.int64), \
+"user_numeric" : np.array([r['waist'], r['hips'], r['bra_size'], r['height'], r['shoe_size']], dtype=np.float32), \
+"item_id" : np.array(r['item_id'], dtype = np.int64), \
+"category" :np.array(r['category'], dtype = np.int64), \
+"item_numeric" : np.array([r['size'], r['quality']], dtype=np.float32), \
+来预测：\
+"fit" : np.array(r['fit'], dtype=np.int64)
+
+使用的方法有：MLP, SFNet.
+
+1. MLP训练结果：\
+TRAIN Epoch 2 / 2, Mean Total Loss 0.556090235710144 \
+VALID Epoch 2 / 2, Mean Total Loss 0.7838857173919678 \
+MLP预测结果：\
+Metrics: \
+ Precision = 0.6192578682183549 \
+ Recall = 0.6494140625 \
+ F1-score = 0.6293734155069196 \ 
+ Accuracy = 0.6494140625 \
+ AUC = 0.6799020238170111 
+
+2. SFNet训练结果：\
+TRAIN Epoch 20 / 20, Mean Total Loss 0.7175785303115845 \
+VALID Epoch 20 / 20, Mean Total Loss 0.7518382668495178 \
+SFNet预测结果：\
+Metrics: \
+ Precision = 0.6396702524325568 \
+ Recall = 0.688720703125 \
+ F1-score = 0.5702997811215722 \
+ Accuracy = 0.688720703125 \
+ AUC = 0.6984894609825474 
+
 ## Contents
 
-0. [Dataset](#Dataset)
-0. [Algorithm](#Algorithm)
-0. [Training](#train)
-0. [Testing](#test)
+1. [Dataset](#Dataset)
+2. [Algorithm](#Algorithm)
+3. [Training](#train)
+4. [Testing](#test)
 
 ## Dataset
 
