@@ -35,6 +35,10 @@ This repository contains the reference code for the project CSE258: Web Mining a
 
 参考论文地址：https://cseweb.ucsd.edu/~jmcauley/pdfs/acl19.pdf
 
+数据集总链接：https://mengtingwan.github.io/data/goodreads.html
+
+过滤后数据集链接：https://datarepo.eng.ucsd.edu/mcauley_group/gdrive/goodreads/goodreads_reviews_spoiler.json.gz
+
 数据集大小：592MB
 
 问题：是否需要根据用户做个性化订制，不做是否有其他问题
