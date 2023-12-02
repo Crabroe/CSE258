@@ -8,8 +8,8 @@ This repository contains the reference code for the project CSE258: Web Mining a
 
 ## Dataset推荐（可随时补充）
 
-0. [GoodreadsSpoilers](#GoodreadsSpoilers)
-0. [ClothingFitData](#ClothingFitData)
+1. [GoodreadsSpoilers](#GoodreadsSpoilers)
+2. [ClothingFitData](#ClothingFitData)
 
 ## GoodreadsSpoilers
 
