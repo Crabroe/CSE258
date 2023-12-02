@@ -96,7 +96,8 @@ This repository contains the reference code for the project CSE258: Web Mining a
 
 ## NetModel
 
-参考了网络上处理好的数据集，使用特征：\
+参考了网络上处理好的数据集，train: test : valid = 8 : 1 : 1 \
+使用特征：\
 "user_id" : np.array(r['user_id'], dtype=np.int64), \
 "cup_size" : np.array(r['cup_size'], dtype=np.int64), \
 "user_numeric" : np.array([r['waist'], r['hips'], r['bra_size'], r['height'], r['shoe_size']], dtype=np.float32), \
